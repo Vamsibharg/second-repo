@@ -1,9 +1,8 @@
 name: hello-world
-on: 
-  push
+on: push
 jobs: 
   my-job:
-  runs-on: windows-2022
-  steps:
-   first-step:
-   run: echo "hello-world"
+     runs-on: windows-2022
+     steps:
+     - name: first-step
+       run: echo "hello world"

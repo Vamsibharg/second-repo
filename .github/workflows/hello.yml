@@ -3,7 +3,7 @@ on:
   push
 jobs: 
   my-job:
-  runs-on: windows-latest
+  runs-on: windows 10 pro
   
 steps:
    first-step:

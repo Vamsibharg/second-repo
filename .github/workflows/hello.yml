@@ -4,7 +4,6 @@ on:
 jobs: 
   my-job:
   runs-on: windows-2022
-  
-steps:
+  steps:
    first-step:
    run: echo "hello-world"

@@ -3,7 +3,7 @@ on:
   push
 jobs: 
   my-job:
-  runs-on: windows 10 pro
+  runs-on: ubuntu-latest
   
 steps:
    first-step:

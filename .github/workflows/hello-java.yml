@@ -1,0 +1,28 @@
+name: second workflow
+ 
+on:
+ push
+
+jobs:
+  printing:
+    runs-on: windows-latest
+    steps:
+     - uses: actions/setup-java@v2
+       with:
+         distribution: 'zulu' # See 'Supported distributions' for available options
+         java-version: '11'
+        
+     - name: Checkout
+       uses: actions/checkout@v2.4.0
+        
+     - name: looking for java
+       run: dir
+        
+     - name: running java file
+       run: 
+         java ${{ github.workspace }}\hello.java
+      
+       
+     
+       
+   
